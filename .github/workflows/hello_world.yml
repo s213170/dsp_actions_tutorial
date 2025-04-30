@@ -13,3 +13,11 @@ jobs:
       run: echo "Hello DTU biosustain!"
     - name: bioengineering
       run: echo "Hello DTU bioengineering!"
+  cowjob: 
+    runs-on: ubuntu-latest
+    steps:
+    - name: cowjob
+      run: echo "job1!"
+    - name: cowjob2
+      run: echo "job2!"
+      
