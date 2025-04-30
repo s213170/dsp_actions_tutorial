@@ -16,8 +16,15 @@ jobs:
   cowjob: 
     runs-on: ubuntu-latest
     steps:
-    - name: cowjob
-      run: echo "job1!"
+    - name: cowjob1
+      run: pip install cowsay
     - name: cowjob2
-      run: echo "job2!"
+      run: cowsay -c cheese -t 'hey threre'
+  cowpyjob: 
+    runs-on: ubuntu-latest
+    steps:
+    - name: cowpyjob1
+      run: pip install cowpy
+    - name: cowpyjob2
+      run: cowpy -c tux 'hey there'      
       
